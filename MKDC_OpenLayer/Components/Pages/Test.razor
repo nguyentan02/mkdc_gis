@@ -1,0 +1,16 @@
+﻿@page "/map"
+@using OpenLayers.Blazor
+
+<div class="card mt-2 mb-2">
+    <div class="card-header">
+        <h3 class="card-title">Bản đồ</h3>
+    </div>
+    <div class="card-body">
+    </div>
+</div>
+
+<Map Style="height:800px;" Class="card" CoordinatesProjection="EPSG:4326" Zoom="6" Center="new Coordinate(108.2022, 16.0471)">
+    <Layers>
+        <Layer SourceType="SourceType.TileWMS" Url="https://sgx.geodatenzentrum.de/wms_topplus_open" Format="image/png" Layers="web" Styles="default"></Layer>
+    </Layers>
+</Map>

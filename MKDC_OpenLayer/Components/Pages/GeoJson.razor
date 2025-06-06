@@ -1,0 +1,82 @@
+﻿@page "/geojsondemo"
+@using System.Text.Json
+
+<div class="card mt-2 mb-2">
+    <div class="card-header">
+        <h3 class="card-title">Vector Layers</h3>
+    </div>
+    <div class="card-body">
+        Different vector layers with different sources
+    </div>
+</div>
+
+<OpenStreetMap @ref="_map"
+               Style="height:800px"
+               Class="card"
+               Center="new(105.854444, 21.028511)" 
+               Zoom="6"
+               ViewProjection="EPSG:4326">
+    <Layers>
+        <Layer LayerType="LayerType.VectorImage"
+               SourceType="SourceType.VectorGeoJson"
+               Url="https://openlayers.org/data/vector/ecoregions.json"
+               Opacity=".5"
+               Options="@_vectorImageOptions" />
+
+        <!-- Vector WKT gần Việt Nam -->
+        <Layer LayerType="LayerType.Vector"
+               SourceType="SourceType.VectorWKT"
+               Data="@_wkt"
+               FlatStyle="@_wktStyle" />
+
+        <Layer LayerType="LayerType.Vector"
+               SourceType="SourceType.VectorKML"
+               Url="https://openlayers.org/en/latest/examples/data/kml/2012-02-10.kml"
+               FormatOptions="@_kmlOptions" />
+
+        <Layer LayerType="LayerType.Heatmap"
+               SourceType="SourceType.VectorKML"
+               Url="https://openlayers.org/en/latest/examples/data/kml/2012_Earthquakes_Mag5.kml"
+               FormatOptions="@((dynamic) new { extractStyles = false })"
+               Options="@((dynamic) new { blur = 15, radius = 5, weight = ".3" })" />
+
+        <!-- Hình ảnh overlay -->
+        @* <Layer LayerType="LayerType.Image"
+               SourceType="SourceType.ImageStatic"
+               Url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Logo_Arosa.svg/480px-Logo_Arosa.svg.png"
+               CrossOrigin="anonymous"
+               Extent="new double[] {102.0, 10.0, 110.0, 24.0}" /> <!-- Gần Việt Nam -->
+
+        <!-- Vẽ một hình tròn gần Hà Nội -->
+        <Layer LayerType="LayerType.Vector"
+               SourceType="SourceType.Vector">
+            <Shapes>
+                <Circle Center="new(105.854444, 21.028511)" Radius="50000" Stroke="red" Fill="transparent" StrokeThickness="3"></Circle>
+            </Shapes>
+        </Layer> *@
+    </Layers>
+</OpenStreetMap>
+
+@code {
+    private Map? _map { get; set; }
+
+    private dynamic _vectorImageOptions = new
+    {
+        imageRatio = 2,
+        style = new Dictionary<string, object>()
+        {
+            { "fill-color", new dynamic[] { "string", new[] { "get", "COLOR" }, "#eee" } }
+        }
+    };
+
+    private dynamic _kmlOptions = new { ShowPointNames = true, ExtractStyles = true };
+
+    // Hình khối WKT mới ở vùng miền Trung Việt Nam
+    private dynamic _wkt = "POLYGON((105.0 16.0, 107.0 16.0, 107.0 18.0, 105.0 18.0, 105.0 16.0))";
+
+    private Dictionary<string, object> _wktStyle = new()
+    {
+        { "fill-color", "rgba(0, 255, 0, 0.3)" },
+        { "stroke-color", "#3399CC" }
+    };
+}

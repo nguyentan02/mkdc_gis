@@ -1,0 +1,55 @@
+﻿window.initializeMap = () => {
+    // Khởi tạo bản đồ OpenLayers
+    var map = new ol.Map({
+        target: 'map', // id của div chứa bản đồ
+        layers: [
+            new ol.layer.Tile({
+                source: new ol.source.OSM() // Nền bản đồ OpenStreetMap
+            })
+        ],
+        view: new ol.View({
+            center: ol.proj.fromLonLat([106.6297, 10.8231]), // Tọa độ TP.HCM (106.6297, 10.8231)
+            zoom: 12 // Cấp độ zoom phù hợp để xem TP.HCM
+        })
+    });
+
+    // Tạo các lớp GeoJSON từ URL
+    var geojsonUrls = [
+        'http://gisportal.vn:8080/geoserver/hcm_esb/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=hcm_esb%3Amepduong_5n&outputFormat=application%2Fjson',
+        'http://gisportal.vn:8080/geoserver/hcm_esb/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=hcm_esb%3Ameplongduong_5n&outputFormat=application%2Fjson',
+        'http://gisportal.vn:8080/geoserver/hcm_esb/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=hcm_esb%3Anutgiaoduongbo_5n&outputFormat=application%2Fjson'
+    ];
+
+    // Tạo các lớp vector
+    var layers = geojsonUrls.map((url, index) => {
+        var vectorSource = new ol.source.Vector({
+            format: new ol.format.GeoJSON(),
+            url: url
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource,
+            visible: true, // Đặt trạng thái ban đầu là hiển thị
+            title: `Layer ${index + 1}` // Đặt tiêu đề cho mỗi lớp
+        });
+
+        map.addLayer(vectorLayer); // Thêm lớp vào bản đồ
+        return vectorLayer;
+    });
+
+    // Hàm để bật/tắt lớp
+    window.toggleLayer = (layerIndex, isVisible) => {
+        layers[layerIndex].setVisible(isVisible);
+    };
+
+    // Tạo giao diện select cho người dùng chọn lớp
+    var controlsDiv = document.createElement('div');
+    controlsDiv.innerHTML = `
+<label><input type="checkbox" checked onchange="toggleLayer(0, this.checked)"> Mepduong</label>
+<br>
+<label><input type="checkbox" checked onchange="toggleLayer(1, this.checked)"> Meplongduong</label>
+<br>
+<label><input type="checkbox" checked onchange="toggleLayer(2, this.checked)"> Nutgiaoduongbo</label>
+    `;
+    document.getElementById('controls').appendChild(controlsDiv); // Thêm giao diện vào DOM
+};

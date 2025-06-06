@@ -1,0 +1,23 @@
+﻿@page "/geojson"
+
+@inject IJSRuntime JSRuntime
+
+<h3 class="mb-2">Bản đồ GeoJSON</h3>
+
+<div>
+    <label><input type="checkbox" checked onchange="toggleLayer('duongbo', this.checked)"> Đường bộ</label><br />
+    <label><input type="checkbox" checked onchange="toggleLayer('mepduong', this.checked)"> Mép đường</label><br />
+    <label><input type="checkbox" checked onchange="toggleLayer('meplong', this.checked)"> Mép lòng đường</label>
+</div>
+
+<div id="map" style="height: 600px; border: 1px solid #ccc; margin-top: 10px;"></div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initializeMap");
+        }
+    }
+}
