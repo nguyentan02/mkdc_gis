@@ -138,3 +138,4 @@ C:\Users\MKDC_23\source\repos\MKDC_OpenLayer\MKDC_OpenLayer\obj\Debug\net8.0\MKD
 C:\Users\MKDC_23\source\repos\MKDC_OpenLayer\MKDC_OpenLayer\obj\Debug\net8.0\MKDC_OpenLayer.genruntimeconfig.cache
 C:\Users\MKDC_23\source\repos\MKDC_OpenLayer\MKDC_OpenLayer\obj\Debug\net8.0\ref\MKDC_OpenLayer.dll
 C:\Users\MKDC_23\source\repos\MKDC_OpenLayer\MKDC_OpenLayer\bin\Debug\net8.0\OpenLayers.Blazor.dll
+C:\Users\MKDC_23\source\repos\MKDC_OpenLayer\MKDC_OpenLayer\obj\Debug\net8.0\MKDC_OpenLayer.sourcelink.json

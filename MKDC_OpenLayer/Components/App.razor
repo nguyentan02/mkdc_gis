@@ -20,7 +20,7 @@
 
 <body>
     <Routes @rendermode="@InteractiveServer" />
-    <script src="_framework/blazor.web.js"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.umd.js" integrity="sha512-gQhCDsnnnUfaRzD8k1L5llCCV6O9HN09zClIzzeJ8OJ9MpGmIlCxm+pdCkqTwqJ4JcjbojFr79rl2F1mzcoLMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -28,20 +28,24 @@
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
     <script src="_content/Blazor.Bootstrap/blazor.bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.8.0/proj4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/ol@latest/ol.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css" />
-
+    <script src="https://cdn.jsdelivr.net/npm/ol/ol.js"></script>
+    <!-- Sau khi các thư viện đã được load -->
     <script>
-             proj4.defs("EPSG:9210",
-            "+proj=utm +zone=48 +ellps=GRS80 " +
-            "+towgs84=-191.9044148,-39.3031828,-111.4503284," +
-            "0.00928836,-0.01975479,0.00427372,-0.00211457 " +
-            "+units=m +no_defs"
+                 proj4.defs("EPSG:9210",
+          "+proj=tmerc +lat_0=0 +lon_0=105.75 +k=0.9999 " +
+          "+x_0=500000 +y_0=0 " +
+          "+ellps=WGS84 " +
+          "+towgs84=-191.90441429,-39.30318279,-111.45032835," +
+                    "-0.00928836,0.01975479,-0.00427372,0.252906278 " +
+          "+units=m +no_defs"
         );
         ol.proj.proj4.register(proj4);
     </script>
-    <script src="js/site.js"></script>
 
+    <script src="js/mapInit.js"></script>
+    @* <script src="js/site.js"></script> *@
+    <script src="js/renderSingleLayer.js"></script>
+    <script src="_framework/blazor.web.js"></script>
 </body>
 
 </html>

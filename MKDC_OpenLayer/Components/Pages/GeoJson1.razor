@@ -1,23 +1,205 @@
 ﻿@page "/geojson"
+@inject IJSRuntime JS
 
-@inject IJSRuntime JSRuntime
+<h3>Các lớp giao thông Thành phố Hồ Chí Minh</h3>
 
-<h3 class="mb-2">Bản đồ GeoJSON</h3>
-
-<div>
-    <label><input type="checkbox" checked onchange="toggleLayer('duongbo', this.checked)"> Đường bộ</label><br />
-    <label><input type="checkbox" checked onchange="toggleLayer('mepduong', this.checked)"> Mép đường</label><br />
-    <label><input type="checkbox" checked onchange="toggleLayer('meplong', this.checked)"> Mép lòng đường</label>
+<div style="margin-bottom:10px">
+    <label>
+        <input type="checkbox"
+               checked
+               @onchange='@(e => Toggle("duongbo_5n", e))' />
+        Đường bộ
+    </label>
+    <label style="margin-left:1em">
+        <input type="checkbox"
+               checked
+               @onchange='@(e => Toggle("mepduong_5n", e))' />
+        Mép đường
+    </label>
+    <label style="margin-left:1em">
+        <input type="checkbox"
+               checked
+               @onchange='@(e => Toggle("meplongduong_5n", e))' />
+        Mép lòng đường
+    </label>
+    <label style="margin-left:1em">
+        <input type="checkbox"
+               checked
+               @onchange='@(e => Toggle("nutgiaoduongbo_5n", e))' />
+        Nút giao
+    </label>
+    <label style="margin-left:1em">
+        <input type="checkbox"
+               checked
+               @onchange='@(e => Toggle("cacdoituongmatduongbos", e))' />
+        Các đối tượng mặt đường
+    </label>
 </div>
 
-<div id="map" style="height: 600px; border: 1px solid #ccc; margin-top: 10px;"></div>
+<div class="map-container">
+    <!-- Spinner overlay -->
+    <div id="spinner" class="spinner-overlay" style="display:none;">
+        <div class="spinner-circle"></div>
+    </div>
+
+    <!-- Div map của OL -->
+    <div id="map" class="ol-map">
+
+    </div>
+
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+    </div>
+
+    <!-- Legend / Chú thích -->
+    <div class="map-legend">
+        <strong>Chú thích:</strong>
+        <ul>
+            <li><span class="legend-line" style="background:red"></span> Đường bộ</li>
+            <li><span class="legend-line" style="background:blue"></span> Mép đường</li>
+            <li><span class="legend-line" style="background:green"></span> Mép lòng đường</li>
+            <li><span class="legend-point" style="background:orange"></span> Nút giao</li>
+            <li><span class="legend-line" style="background:black"></span> Các đối tượng mặt đường</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .map-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        margin-bottom: 1em;
+    }
+
+    .ol-map {
+        width: 100%;
+        height: 100%;
+    }
+
+    .spinner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255,255,255,0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    .spinner-circle {
+        width: 40px;
+        height: 40px;
+        border: 5px solid #888;
+        border-top-color: transparent;
+        border-radius: 50%;
+
+        @@keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        animation: spin 1s linear infinite;
+    }
+
+
+
+    .map-legend {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+        background: #fff;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        width: 200px;
+    }
+
+        .map-legend ul {
+            list-style: none;
+            padding: 0;
+            margin: 6px 0 0;
+        }
+
+        .map-legend li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+    .legend-line {
+        width: 24px;
+        height: 2px;
+        margin-right: 8px;
+        display: inline-block;
+    }
+
+    .legend-point {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-right: 8px;
+        display: inline-block;
+    }
+ 
+    .ol-popup {
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #111111;
+        min-width: 180px;
+        z-index: 1001;
+    }
+
+    .ol-popup-closer {
+        position: absolute;
+        top: 2px;
+        right: 7px;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+        .ol-popup-closer:after {
+            content: "✖";
+        }
+</style>
 
 @code {
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender)
+        if (!firstRender)
+            return;
+
+        // 1) Khởi bản đồ OSM
+        await JS.InvokeVoidAsync("initializeMap", "map");
+       
+        // 2) Tự động load hết các lớp ngay từ đầu
+        var keys = new[] {
+      "duongbo_5n",
+      "mepduong_5n",
+      "meplongduong_5n",
+      "nutgiaoduongbo_5n",
+      "cacdoituongmatduongbos"
+    };
+        foreach (var key in keys)
         {
-            await JSRuntime.InvokeVoidAsync("initializeMap");
+            await JS.InvokeVoidAsync("toggleLayer", key, true);
         }
+    }
+
+    private ValueTask Toggle(string key, ChangeEventArgs e)
+    {
+        bool isChecked = (bool)e.Value;
+        return JS.InvokeVoidAsync("toggleLayer", key, isChecked);
     }
 }

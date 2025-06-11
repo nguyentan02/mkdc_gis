@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MKDC_OpenLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64c39ae5b77aad08bc51782fc056fefbe37483af")]
 [assembly: System.Reflection.AssemblyProductAttribute("MKDC_OpenLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MKDC_OpenLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

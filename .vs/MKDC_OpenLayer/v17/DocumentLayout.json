@@ -1,0 +1,215 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\wwwroot\\js\\rendersinglelayer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\wwwroot\\js\\rendersinglelayer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\wwwroot\\js\\mapinit.js||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\wwwroot\\js\\mapinit.js||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\components\\pages\\geojson1.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\components\\pages\\geojson1.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\wwwroot\\js\\mapinit.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\wwwroot\\js\\mapinit.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|c:\\users\\mkdc_23\\source\\repos\\mkdc_openlayer\\mkdc_openlayer\\components\\pages\\test.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5628C774-A338-454B-9A98-BD2820CC2076}|MKDC_OpenLayer\\MKDC_OpenLayer.csproj|solutionrelative:mkdc_openlayer\\components\\pages\\test.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 262,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\.gitignore",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\.gitignore",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\.gitignore",
+              "RelativeToolTip": "MKDC_OpenLayer\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-11T02:18:17.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\app.css",
+              "RelativeToolTip": "MKDC_OpenLayer\\wwwroot\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-11T01:46:22.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Components\\_Imports.razor",
+              "RelativeToolTip": "MKDC_OpenLayer\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T06:50:57.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "mapInit.js",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\js\\mapInit.js",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\wwwroot\\js\\mapInit.js",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\js\\mapInit.js",
+              "RelativeToolTip": "MKDC_OpenLayer\\wwwroot\\js\\mapInit.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-10T02:17:15.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MKDC_OpenLayer\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-10T01:12:31.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\appsettings.json",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\appsettings.json",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\appsettings.json",
+              "RelativeToolTip": "MKDC_OpenLayer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-10T01:12:16.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mapInit.js",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\js\\mapInit.js",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\wwwroot\\js\\mapInit.js",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\js\\mapInit.js",
+              "RelativeToolTip": "MKDC_OpenLayer\\wwwroot\\js\\mapInit.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-09T02:34:19.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "renderSingleLayer.js",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\js\\renderSingleLayer.js",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\wwwroot\\js\\renderSingleLayer.js",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\js\\renderSingleLayer.js",
+              "RelativeToolTip": "MKDC_OpenLayer\\wwwroot\\js\\renderSingleLayer.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-09T01:37:05.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GeoJson1.razor",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Components\\Pages\\GeoJson1.razor",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\Components\\Pages\\GeoJson1.razor",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Components\\Pages\\GeoJson1.razor",
+              "RelativeToolTip": "MKDC_OpenLayer\\Components\\Pages\\GeoJson1.razor",
+              "ViewState": "AgIAALkAAAAAAAAAAAAIwMMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T03:44:41.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "MKDC_OpenLayer\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T01:38:54.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Components\\App.razor",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Components\\App.razor",
+              "RelativeToolTip": "MKDC_OpenLayer\\Components\\App.razor",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T08:01:45.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Test.razor",
+              "DocumentMoniker": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Components\\Pages\\Test.razor",
+              "RelativeDocumentMoniker": "MKDC_OpenLayer\\Components\\Pages\\Test.razor",
+              "ToolTip": "C:\\Users\\MKDC_23\\source\\repos\\MKDC_OpenLayer\\MKDC_OpenLayer\\Components\\Pages\\Test.razor",
+              "RelativeToolTip": "MKDC_OpenLayer\\Components\\Pages\\Test.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T08:37:25.169Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
